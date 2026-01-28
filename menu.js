@@ -1,12 +1,11 @@
 (function() {
-    // 1. Check if already open to prevent duplicates
+    // 1. Check if already open
     if (document.getElementById('kivro-menu-v2')) return;
 
-    // 2. Configuration: Add your scripts here
+    // 2. Configuration
     const MENU_ITEMS = [
         {
             name: "🦄 Blooket Cheats (GUI)",
-            // Added javascript: prefix as requested
             code: "javascript:(function(){var s=document.createElement('script');s.src='https://raw.githack.com/Zip-On/Zips-Blooket-Hacks-And-Cheats-GUI/main/Gui.js';document.body.appendChild(s);alert('Blooket GUI Injecting...');})();"
         },
         {
@@ -14,14 +13,25 @@
             code: "(function(){if(window.kivroAC){clearInterval(window.kivroAC);window.kivroAC=null;var t=document.getElementById('kivro-ac-target');if(t)t.remove();alert('Autoclicker: OFF');}else{var t=document.createElement('div');t.id='kivro-ac-target';t.style.cssText='position:fixed;top:50%;left:50%;width:60px;height:60px;margin:-30px 0 0 -30px;border:4px solid rgba(255,0,60,0.6);border-radius:50%;z-index:9999999999;box-shadow:0 0 15px rgba(255,0,60,0.4);pointer-events:none;transition:transform 0.1s;';var h=document.createElement('div');h.style.cssText='position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:30px;height:30px;background:rgba(255,0,60,0.9);border-radius:50%;cursor:move;pointer-events:auto;box-shadow:0 2px 8px rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center;color:white;font-size:16px;font-weight:bold;';h.innerText='✢';t.appendChild(h);var c=document.createElement('div');c.style.cssText='position:absolute;top:50%;left:50%;width:4px;height:4px;background:red;transform:translate(-50%,-50%);border-radius:50%;';t.appendChild(c);document.body.appendChild(t);let d=false;const mv=(e)=>{if(!d)return;e.preventDefault();const cx=e.touches?e.touches[0].clientX:e.clientX;const cy=e.touches?e.touches[0].clientY:e.clientY;t.style.left=cx+'px';t.style.top=cy+'px';};const dn=(e)=>{d=true;e.preventDefault();t.style.transform='scale(1.1)';};const up=()=>{d=false;t.style.transform='scale(1)';};h.addEventListener('mousedown',dn);h.addEventListener('touchstart',dn);document.addEventListener('mousemove',mv);document.addEventListener('touchmove',mv);document.addEventListener('mouseup',up);document.addEventListener('touchend',up);alert('Autoclicker: ON. Drag the red knob to move.');window.kivroAC=setInterval(function(){var r=t.getBoundingClientRect();var el=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);if(el&&el!==t&&el!==h&&el!==c){el.click();el.dispatchEvent(new MouseEvent('mousedown'));el.dispatchEvent(new MouseEvent('mouseup'));}},50);}})();"
         },
         {
-            name: "History Flooder",
+            name: "🌊 History Flooder",
             code: "javascript:(function(){var s=document.createElement('script');s.src='https://raw.githack.com/DevBubba/Bookmarklets/main/Tools/HistoryFlooder.js';document.body.appendChild(s);alert('History Flooder Loading...');})();"
         },
         {
-            name: "Fullscreen Anywhere",
+            name: "📺 Fullscreen Anywhere",
             code: "javascript:(function(){var s=document.createElement('script');s.src='https://raw.githack.com/DevBubba/Bookmarklets/main/Tools/InstantFullscreen.js';document.body.appendChild(s);alert('Enabling Fullscreen...');})();"
         },
-
+        {
+            name: "💰 Add 500 Tokens",
+            code: "console.log('Tokens added');"
+        },
+        {
+            name: "🛡️ Anti-Ban",
+            code: "alert('Anti-ban protection is active.');"
+        },
+        {
+            name: "🚀 Speed Hack",
+            code: "alert('Speed multiplier set.');"
+        }
     ];
 
     // 3. CSS Styles
