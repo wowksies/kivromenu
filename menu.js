@@ -15,16 +15,13 @@
         },
         {
             name: "History Flooder",
-            code: "javascript:var num=prompt("History Flood Amount:");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert("History Flood Successful! "+window.location.href+" Now Appears In Your History "+num+(num==1?" Time!":" Times!"))}"
+            code: "javascript:(function(){var s=document.createElement('script');s.src='https://raw.githack.com/DevBubba/Bookmarklets/main/Tools/HistoryFlooder.js';document.body.appendChild(s);alert('History Flooder Loading...');})();"
         },
         {
-            name: "🛡️ Anti-Ban",
-            code: "alert('Anti-ban protection is active.');"
+            name: "Fullscreen Anywhere",
+            code: "javascript:(function(){var s=document.createElement('script');s.src='https://raw.githack.com/DevBubba/Bookmarklets/main/Tools/InstantFullscreen.js';document.body.appendChild(s);alert('Enabling Fullscreen...');})();"
         },
-        {
-            name: "🚀 Speed Hack",
-            code: "alert('Speed multiplier set.');"
-        }
+
     ];
 
     // 3. CSS Styles
