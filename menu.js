@@ -2,10 +2,6 @@ javascript:(function() {
     // 1. Check if already open
     if (document.getElementById('kivro-menu-v2')) return;
 
-    /* ===============================================================
-       CONFIG: ADD YOUR SCRIPTS HERE
-       Just add a new { name: "...", code: "..." } to this list!
-       =============================================================== */
     const MENU_ITEMS = [
         {
             name: "Blooket Cheat",
