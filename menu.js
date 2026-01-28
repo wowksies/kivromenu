@@ -1,4 +1,4 @@
-javascript:(function() {
+(function() {
     // 1. Check if already open
     if (document.getElementById('kivro-menu-v2')) return;
 
